@@ -53,17 +53,17 @@ class Contact extends React.Component {
     // }
 
 
-    // handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     console.log(this.state)
-    //     fetch('https://ipsita-portfolio.herokuapp.com/', {
-    //         method: "POST",
-    //         headers: {"Content-Type" : "application/json"},
-    //         body: JSON.stringify(this.state),
-    //         data: this.state
-    //       }) .then(() => alert("Success! Talk soon!"))
-    //       .catch(error => alert(error));
-    // }
+    handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(this.state)
+        fetch('https://ipsita-portfolio.herokuapp.com/', {
+            method: "POST",
+            headers: {"Content-Type" : "application/json"},
+            body: JSON.stringify(this.state),
+            data: this.state
+          }) .then(() => alert("Success! Talk soon!"))
+          .catch(error => alert(error));
+    }
 
     resetForm() {
 
@@ -76,7 +76,7 @@ class Contact extends React.Component {
             <div className="contact--container" id="contact">
                 <div className = "contacts-title"><div>CONTACT ME</div></div>
                 {/* <p> email: ipsita.rao@gmail.com</p> */}
-                <form id="contact-form" onSubmit={this.handleSubmit} >
+                <form id="contact-form" onSubmit={this.handleSubmit}  method="POST">
                     <div className="form-group">
                         <label htmlFor="name">NAME</label>
                         <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
