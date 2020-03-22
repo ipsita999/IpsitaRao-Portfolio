@@ -57,6 +57,18 @@ router.post('/send', (req, res) => {
     })
 })
 
+
+
+
+const app = express()
+
+app.use(bodyParser.json())
+app.use(cors())
+app.use(express.json())
+app.use('/', router)
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
 if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));
 }
@@ -64,12 +76,3 @@ if (process.env.NODE_ENV === 'production') {
 app.get('*', (request, response) => {
 	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
-
-
-const app = express()
-app.use(bodyParser.json())
-app.use(cors())
-app.use(express.json())
-app.use('/', router)
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
