@@ -66,7 +66,7 @@ router.post('/', (req, res) => {
     })
 })
 
-const app = express()
+
 app.use('/', router)
 app.get('/', (req,res) => res.json({message: 'Connected'}))
 
