@@ -8,9 +8,7 @@ require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
 
-app.use(cors())
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json())
+
 // app.use(express.json())
 
 
@@ -68,7 +66,9 @@ router.post('/', (req, res) => {
 
 }
 
-
+app.use(cors())
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json())
 
 app.get('/', (req,res) => res.json({message: 'Connected'}))
 app.use('/', main)
