@@ -75,8 +75,10 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));
 }
 
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-});
+
+App.get('/', (req,res) => res.json({message: 'Connected'}))
+// app.get('*', (request, response) => {
+// 	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+// });
 
 // "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
