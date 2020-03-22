@@ -53,17 +53,17 @@ class Contact extends React.Component {
     // }
 
 
-    handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(this.state)
-        fetch('https://ipsita-portfolio.herokuapp.com/', {
-            method: "POST",
-            headers: {"Content-Type" : "application/json"},
-            body: JSON.stringify(this.state),
-            data: this.state
-          }) .then(() => alert("Success! Talk soon!"))
-          .catch(error => alert(error));
-    }
+    // handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log(this.state)
+    //     fetch('https://ipsita-portfolio.herokuapp.com/', {
+    //         method: "POST",
+    //         headers: {"Content-Type" : "application/json"},
+    //         body: JSON.stringify(this.state),
+    //         data: this.state
+    //       }) .then(() => alert("Success! Talk soon!"))
+    //       .catch(error => alert(error));
+    // }
 
     resetForm() {
 
