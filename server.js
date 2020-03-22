@@ -5,8 +5,25 @@ const cors = require('cors')
 const bodyParser = require('body-parser');
 
 require('dotenv').config();
-// process.env.DB_CLIENTID = "clientid"
-// process.env.CLIENTSECRET = "clientsecret"
+const app = express()
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true}));
+
+app.use(cors())
+app.use(express.json())
+app.use('/', router)
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static('client/build'));
+}
+
+app.get('*', (request, response) => {
+	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -31,7 +48,7 @@ transporter.verify((error) => {
     }
 });
 
-router.post('/', (req, res) => {
+router.post('/send', (req, res) => {
     const name = req.body.name
     const email = req.body.email
     const message = req.body.message
@@ -60,25 +77,5 @@ router.post('/', (req, res) => {
 
 
 
-const app = express()
-
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: true}));
-
-app.use(cors())
-app.use(express.json())
-app.use('/', router)
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
-}
-
-
-App.get('/', (req,res) => res.json({message: 'Connected'}))
-// app.get('*', (request, response) => {
-// 	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-// });
 
 // "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
