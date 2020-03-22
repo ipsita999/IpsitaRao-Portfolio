@@ -4,6 +4,9 @@ const nodemailer = require('nodemailer');
 const cors = require('cors')
 const bodyParser = require('body-parser');
 
+require('dotenv').config();
+// process.env.DB_CLIENTID = "clientid"
+// process.env.CLIENTSECRET = "clientsecret"
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -12,10 +15,10 @@ const transporter = nodemailer.createTransport({
     auth: {
         type: 'OAuth2',
         user: 'ipsita.rao@gmail.com',
-        clientId: '65137468569-kvc8r7qbua4hnqtcc603qlg4ul87qpa1.apps.googleusercontent.com',
-        clientSecret: 'cdZ0ljx3odGSyCoM4l2bpELg',
-        refreshToken: '1//04NT39bz5kZQaCgYIARAAGAQSNwF-L9Irdz66sMrr5QfXkH8jqWmfRFRkygWqlBzwjOO20AsMI4ILsIVGc0bepmenttthug3xR90',
-        accessToken: 'ya29.a0Adw1xeWIPPoOwoKw9GpXUqzjytW_mW0-jdYXeu4c_uqlksNx9JBFXloco3ZPJgGSenUAaCUxPnyYOI3AG8Dh4wu2VNt0IsmAFe_QWpMBi2QC0nQDaF8_fU3DK4P3ukX0JWFDPv394kMtOO2fyrYdmOv9wFLSd20po2s'
+        clientId: process.env.DB_CLIENTID,
+        clientSecret: process.env.DB_CLIENTSECRET,
+        refreshToken: process.env.DB_REFRESHTOKEN,
+        accessToken: process.env.DB_ACCESSTOKEN
     }
 })
 
