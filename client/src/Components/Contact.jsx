@@ -13,34 +13,14 @@ class Contact extends React.Component {
     }
 
 
-    handleSubmit = (e) => {
-        e.preventDefault();
-        axios({
-            method: "POST",
-            url:"https://ipsita-portfolio.herokuapp.com/",
-            // url: "http://localhost:3000/send" || "https://ipsita-portfolio.herokuapp.com/",
-            data: this.state
-        }).then((response) => {
-            if (response.data.status === 'success') {
-                alert("Message Sent.");
-                console.log("Message Sent.");
-                this.resetForm()
-            } else if (response.data.status === 'fail') {
-                alert("Message failed to send.")
-                console.log("Message failed to send.");
-            }
-        })
-    }
-
-
     // handleSubmit = (e) => {
     //     e.preventDefault();
-    //     console.log(this.state)
-    //     fetch('https://ipsita-portfolio.herokuapp.com/', {
+    //     axios({
     //         method: "POST",
-    //         headers: {"Content-Type" : "application/json"},
-    //         body: JSON.stringify(this.state)
-    //       }).then((response) => {
+    //         url:"https://ipsita-portfolio.herokuapp.com/",
+    //         // url: "http://localhost:3000/send" || "https://ipsita-portfolio.herokuapp.com/",
+    //         data: this.state
+    //     }).then((response) => {
     //         if (response.data.status === 'success') {
     //             alert("Message Sent.");
     //             console.log("Message Sent.");
@@ -51,6 +31,27 @@ class Contact extends React.Component {
     //         }
     //     })
     // }
+
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(this.state)
+        fetch('https://ipsita-portfolio.herokuapp.com/', {
+            method: "POST",
+            headers: {"Content-Type" : "application/json"},
+            body: JSON.stringify(this.state),
+            data: this.state
+          }).then((response) => {
+            if (response.data.status === 'success') {
+                alert("Message Sent.");
+                console.log("Message Sent.");
+                this.resetForm()
+            } else if (response.data.status === 'fail') {
+                alert("Message failed to send.")
+                console.log("Message failed to send.");
+            }
+        })
+    }
 
     resetForm() {
 
