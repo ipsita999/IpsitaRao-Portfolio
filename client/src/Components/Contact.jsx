@@ -41,16 +41,8 @@ class Contact extends React.Component {
             headers: {"Content-Type" : "application/json"},
             body: JSON.stringify(this.state),
             data: this.state
-          }).then((response) => {
-            if (response.data.status === 'success') {
-                alert("Message Sent.");
-                console.log("Message Sent.");
-                this.resetForm()
-            } else if (response.data.status === 'fail') {
-                alert("Message failed to send.")
-                console.log("Message failed to send.");
-            }
-        })
+          }) .then(() => alert("Success! Talk soon!"))
+          .catch(error => alert(error));
     }
 
     resetForm() {
