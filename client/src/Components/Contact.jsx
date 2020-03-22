@@ -12,7 +12,7 @@ class Contact extends React.Component {
         }
     }
 
-    const PORT = process.env.PORT
+
     handleSubmit = (e) => {
         e.preventDefault();
         axios({
