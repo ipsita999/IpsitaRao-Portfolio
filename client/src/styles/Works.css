@@ -1,0 +1,141 @@
+.works--container{
+    /* height: 100vh; */
+    width: 90vh;
+    color: rgb(214, 39, 83);
+    /* margin: 5%; */
+    font-size: 200%;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+}
+
+.works-title{
+    background-image:linear-gradient(rgba(46, 19, 29, 0.55),rgba(46, 19, 29, 0.55)),  url(https://images.unsplash.com/photo-1525247923538-c105d2dd605d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=946&q=80);
+    width: 90vw;
+    height: 60vh;
+    margin-left: 10vw;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: -930px;
+    background-position-x: 80px;
+    /* z-index: 12; */
+    font-family: 'Text Me One', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: ghostwhite;
+    color:  rgb(251, 250, 248);
+    font-size: 400%;
+    /* position: absolute; */
+    padding: 5%;
+    box-shadow: 1px 1px 5px rgb(41, 0, 1);
+    /* background-repeat: no-repeat; */
+}
+.sec-title{
+    font-family: 'Text Me One', sans-serif;
+    font-size: 150%;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    color:rgb(34,19,22);
+
+}
+.projects-sec{
+    width: 90vw;
+    margin-left: 10vw;
+    padding: 5%;
+    justify-content: center;
+    /* height: 40vh; */
+}
+
+.client-sec{
+    width: 90vw;
+    margin-left: 10vw;
+    padding: 5%;
+    justify-content: center;
+    padding-top: 0;
+    /* height: 40vh; */
+
+}
+.p1 {
+    display: flex;
+    margin: 5%;
+    margin-left: 8vw;
+    height: 35vh;
+
+}
+.info-box {
+    display: flex;
+    flex-direction: column;
+    font-family: 'PT Sans Narrow', sans-serif;
+    align-items: center;
+    /* justify-content: center; */
+  
+}
+
+.info {
+    font-size: 55%;
+    width: 75%;
+    text-align: justify;
+    letter-spacing: 2.8px;
+    word-spacing: 2.5px;
+    line-height: 35px;
+    color: rgb(43, 39, 40);
+
+}
+
+.p2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5%;
+    margin-right: 8vw;
+    height: 35vh;
+
+}
+.linkss {
+    display: flex;
+    margin: 2%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    
+
+}
+
+.web {
+    text-decoration: none;
+    margin: 3%; 
+    padding: 7%; 
+    border: 2px solid rgb(214, 39, 83);
+    color: rgb(214, 39, 83);
+    border-radius: 15px;
+    font-weight: bold;
+    text-align:center ;
+}
+    
+.git-link {
+    text-decoration: none;
+    margin: 3%; 
+    padding: 7%; 
+    border: 2px solid rgb(214, 39, 83);
+    color: rgb(214, 39, 83);
+    border-radius: 15px;
+    font-weight: bold;
+    text-align:center ;
+
+}
+    
+.git-linka {
+    text-decoration: none;
+    margin: 3%; 
+    padding: 7%; 
+    border: 2px solid rgb(214, 39, 83);
+    border: 2px solid  rgb(251, 250, 248);;
+    color: rgb(214, 39, 83);
+    color:  rgb(251, 250, 248);
+    border-radius: 15px;
+    font-weight: bold;
+    text-align:center ;
+
+}
+    

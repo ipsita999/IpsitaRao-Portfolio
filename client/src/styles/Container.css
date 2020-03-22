@@ -1,0 +1,16 @@
+.main--container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-one {
+    /* display: flex;
+    flex-direction: row;
+    width: 100vw; */
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 88vw;
+    /* margin-left: 500px; */
+}

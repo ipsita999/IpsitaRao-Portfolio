@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Text Me One', sans-serif; */
+
+}
+body{
+  background-color: rgb(251, 250, 248);
+  /* background-color: rgb(243, 243, 243); */
+}
+
+@font-face {
+	font-family: 'Chasing Embers';
+	font-style: normal;
+	src: url('./styles/Chasing\ Embers\ Demo\ Version.otf')
+  }

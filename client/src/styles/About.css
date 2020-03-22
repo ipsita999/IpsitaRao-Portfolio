@@ -1,0 +1,120 @@
+.about--container{
+    margin-top: 100vh;
+    height: 100vh;
+    width: 90vw;
+    transform: translateX(10vw);
+    color: rgb(214, 39, 83);
+    padding-top: 4%;
+    /* margin-top: 3%; */
+    font-family: 'Text Me One', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    /* font-family: 'Cutive Mono', monospace; */
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+  
+}
+.top-sec{
+    display: flex;
+    height: 60vh;
+        justify-content: center;
+
+}
+
+.me {
+    background-image:linear-gradient(rgba(46, 19, 29, 0.301),rgba(46, 19, 29, 0.301)), url(https://i.ibb.co/RBxtvKB/IMG-0873.jpg);
+    background-size: 410px;
+    /* background-size: ; */
+    width: 22%;
+    height: 80%;
+    margin-right: 7%;
+    margin-left: 8%;
+    background-position-x: 12%;
+    background-position-y: -8%;
+    background-attachment: fixed;
+    /* border: solid red 2px; */
+}
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 50%;
+    height: 78%;
+        /* border: solid red 2px; */
+
+
+}
+
+.about-title{
+  font-size: 340%;
+  /* width: 70%; */
+  font-weight: bold;
+  font-family: 'Text Me One', sans-serif;
+  letter-spacing: 3px;
+  /* margin: 1%; */
+  /* text-align: center; */
+  transform: translateX(3.5%);
+  text-transform: uppercase;
+      /* border: solid red 2px; */
+
+}
+
+
+.brand {
+    font-size: 139%;
+    font-size: 98%;
+    width: 58%;
+    width: 80%;
+    text-align: justify;
+    letter-spacing: 2.8px;
+    word-spacing: 2.5px;
+    line-height: 38px;
+    color: rgb(43, 39, 40);
+    margin:0%;
+    
+    /* text-transform: uppercase; */
+
+    font-weight: lighter;
+
+}
+
+.skills-sec{
+    display: flex;
+    /* margin: 5%; */
+    margin-bottom: 7%;
+    justify-content: center;
+    align-items: center;
+    /* border: springgreen 2px solid; */
+    /* width: 100%; */
+}
+
+.skills-title{
+    width: 20%;
+    margin-right: 1%;
+    /* border: purple 2px solid; */
+
+
+    /* transform: translateX(3.5%); */
+    /* text-transform: uppercase; */
+
+}
+
+.skills {
+    font-size: 210%;
+    width: 55%;
+    text-align: justify;
+    letter-spacing: 3px;
+    word-spacing: 2.5px;
+    line-height: 50px;
+    color: rgb(43, 39, 40);
+    /* margin:0%; */
+    
+    /* text-transform: uppercase; */
+
+    font-weight: lighter;
+}
