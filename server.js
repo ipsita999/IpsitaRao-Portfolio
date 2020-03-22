@@ -66,9 +66,9 @@ router.post('/', (req, res) => {
     })
 })
 
-
+const app = express()
 app.use('/', router)
-App.get('/', (req,res) => res.json({message: 'Connected'}))
+app.get('/', (req,res) => res.json({message: 'Connected'}))
 
 // if (process.env.NODE_ENV === 'production') {
 // 	app.use(express.static('client/build'));
