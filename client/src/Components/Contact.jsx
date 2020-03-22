@@ -12,11 +12,13 @@ class Contact extends React.Component {
         }
     }
 
+    const PORT = process.env.PORT
     handleSubmit = (e) => {
         e.preventDefault();
         axios({
             method: "POST",
-            url: "http://localhost:3000/send" || "https://ipsita-portfolio.herokuapp.com/",
+            url:"https://ipsita-portfolio.herokuapp.com/",
+            // url: "http://localhost:3000/send" || "https://ipsita-portfolio.herokuapp.com/",
             data: this.state
         }).then((response) => {
             if (response.data.status === 'success') {
