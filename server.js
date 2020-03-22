@@ -12,17 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(cors())
 app.use(express.json())
-app.use('/', router)
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
-}
-
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-});
 
 
 const transporter = nodemailer.createTransport({
@@ -75,7 +65,17 @@ router.post('/', (req, res) => {
 })
 
 
+app.use('/', router)
 
 
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static('client/build'));
+}
 
+app.get('*', (request, response) => {
+	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
 // "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
