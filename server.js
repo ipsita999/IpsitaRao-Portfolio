@@ -1,9 +1,10 @@
 const express = require('express');
+const app = express()
 const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors')
 const bodyParser = require('body-parser');
-const app = express()
+
 require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
@@ -13,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 
 
 
-const main = async (req, res) => {
+// const main = async (req, res) => {
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -64,14 +65,14 @@ router.post('/', (req, res) => {
     })
 })
 
-}
+// }
 
 app.use(cors())
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json())
 
 app.get('/', (req,res) => res.json({message: 'Connected'}))
-app.use('/', main)
+app.use('/', router)
 
 
 // if (process.env.NODE_ENV === 'production') {
