@@ -172,7 +172,7 @@ label{
         background-image:linear-gradient(rgba(46, 19, 29, 0.55),rgba(46, 19, 29, 0.55)),  url(https://images.unsplash.com/photo-1518621519653-428244942d7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
         background-attachment: fixed;
         background-size: cover;
-        background-position-y: 200px;
+        background-position-y: 800px;
         background-position-x: 80px;
         /* justify-content: flex-start; */
         align-items: center;
