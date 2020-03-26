@@ -139,4 +139,177 @@ flex-direction: column;
     text-align:center ;
 
 }
+
+@media(max-width: 375px) {
+    .works--container{
+        /* height: 100vh; */
+        width: 100vh;
+        color: rgb(214, 39, 83);
+        /* margin: 5%; */
+        font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    /* justify-content: center; */
+    }
+
+    .works-title{
+        background-image:linear-gradient(rgba(46, 19, 29, 0.55),rgba(46, 19, 29, 0.55)),  url(https://images.unsplash.com/photo-1525247923538-c105d2dd605d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=946&q=80);
+        width: 100vw;
+        height: 30vh;
+        margin-left: 0vw;
+        background-attachment: fixed;
+        background-size: 400px;
+        background-position-y: 80px;
+        background-position-x: 0px;
+        /* z-index: 12; */
+        font-family: 'Text Me One', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: ghostwhite;
+        color:  rgb(251, 250, 248);
+        font-size: 200%;
+        /* position: absolute; */
+        padding: 5%;
+        box-shadow: 1px 1px 5px rgb(41, 0, 1);
+        /* background-repeat: no-repeat; */
+    }
+
+    .projects-sec{
+        width: 100vw;
+        margin-left: 0vw;
+        padding: 5%;
+        justify-content: center;
+        /* height: 40vh; */
+    }
+
+    .client-sec{
+        width: 100vw;
+        margin-left: 0vw;
+        padding: 5%;
+        justify-content: center;
+        padding-top: 0;
+        /* height: 40vh; */
+    
+    }
+
+    .sec-title{
+        font-family: 'Text Me One', sans-serif;
+        font-size: 120%;
+        letter-spacing: 2.5px;
+        font-weight: bold;
+        color:rgb(34,19,22);
+    
+    }
+
+    .p1 {
+        display: flex;
+        width: 95vw;
+        margin: 5%;
+        margin-left: 0vw;
+        height: 35vh;
+        align-items: center;
+    
+    }
+    .p2 {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 95vw;
+        margin: 5%;
+        margin-right: 0vw;
+        height: 35vh;
+        align-items: center;
+    
+    }
+    .info-box {
+        display: flex;
+        flex-direction: column;
+        font-family: 'PT Sans Narrow', sans-serif;
+        align-items: center;
+        /* justify-content: center; */
+      
+    }
+    .stitched-pic{
+        width: 40%;
+        height: 40%;
+        margin-right: 4%;
+    }
+    .cooking-pic{
+        width: 40%;
+        height: 40%;
+        margin-left: 4%;
+    }
+    .richord-pic{
+        width: 40%;
+        height: 40%;
+        margin-right: 4%;
+    }
+    .plastic-pic{
+        width: 40%;
+        height: 40%;
+        margin-left: 4%;
+    }
+
+
+.info {
+    font-size: 40%;
+    width: auto;
+    text-align: justify;
+    letter-spacing: 2.8px;
+    word-spacing: 2.5px;
+    line-height: 20px;
+    color: rgb(43, 39, 40);
+
+}
+
+.web {
+    text-decoration: none;
+    margin: 3%; 
+    padding: 4%; 
+    border: 2px solid rgb(214, 39, 83);
+    color: rgb(214, 39, 83);
+    border-radius: 15px;
+    font-weight: bold;
+    text-align:center ;
+}
+    
+.git-link {
+    text-decoration: none;
+    margin: 3%; 
+    padding: 4%; 
+    border: 2px solid rgb(214, 39, 83);
+    color: rgb(214, 39, 83);
+    border-radius: 15px;
+    font-weight: bold;
+    text-align:center ;
+
+}
+.git-link {
+    text-decoration: none;
+    margin: 3%; 
+    padding: 4%; 
+    border: 2px solid rgb(214, 39, 83);
+    color: rgb(214, 39, 83);
+    border-radius: 15px;
+    font-weight: bold;
+    text-align:center ;
+    
+
+}
+
+.linkss {
+    display: flex;
+    margin: 2%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    
+
+}
+
+    
+
+}
     

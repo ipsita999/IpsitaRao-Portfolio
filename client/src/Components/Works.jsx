@@ -10,7 +10,7 @@ const Works = () => {
         <div className = "projects-sec">
             <div className = "sec-title">PROJECTS</div>
             <div className = "p1">
-                <img className ="stiched-pic" src ="https://media.giphy.com/media/RMNVUVEYkDZydqzqkS/giphy.gif"/>
+                <img className ="stitched-pic" src ="https://media.giphy.com/media/RMNVUVEYkDZydqzqkS/giphy.gif"/>
                 <div className = "info-box">
                     <p className = "title">STITCHED</p>
               <p className = 'info'> A fully responsive design-template for a clothing delivery serivce. Built using pure HTML, CSS and Javascript.</p>

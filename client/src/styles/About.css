@@ -21,7 +21,7 @@
 .top-sec{
     display: flex;
     height: 60vh;
-        justify-content: center;
+    justify-content: center;
 
 }
 
@@ -117,4 +117,134 @@
     /* text-transform: uppercase; */
 
     font-weight: lighter;
+}
+
+@media (max-width: 375px) {
+
+    .about--container{
+        margin-top: 100vh;
+        height: 120vh;
+        width: 100vw;
+        transform: translateX(10vw);
+        color: rgb(214, 39, 83);
+        padding-top: 4%;
+        /* margin-top: 3%; */
+        font-family: 'Text Me One', sans-serif;
+        font-family: 'Rajdhani', sans-serif;
+        /* font-family: 'Cutive Mono', monospace; */
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'PT Sans Narrow', sans-serif;
+        /* border: 1px solid greenyellow; */
+        display: flex;
+        /* flex-direction: column; */
+        align-items: flex-start;
+        margin-left: 0;
+        /* align-items: center; */
+        /* justify-content: center; */
+      
+    }
+
+    .me {
+        background-image:linear-gradient(rgba(46, 19, 29, 0.301),rgba(46, 19, 29, 0.301)), url(https://i.ibb.co/RBxtvKB/IMG-0873.jpg);
+        background-size: 270px;
+        /* background-size: ; */
+        width: 60%;
+        height: 50%;
+        /* margin-right: 7%; */
+        /* margin-left: 8%; */
+        background-position-x: 1%;
+        background-position-y: 0%;
+        background-attachment: fixed;
+        /* border: solid red 2px; */
+    }
+
+    .top-sec{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        height: 100vh;
+        justify-content: flex-start;
+    
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* transform: translateY(200px); */
+        /* align-items: center; */
+        width: 100%;
+        height: auto;
+            /* border: solid red 2px; */
+    
+    }
+
+    .about-title{
+        font-size: 140%;
+        /* width: 70%; */
+        font-weight: bold;
+        font-family: 'Text Me One', sans-serif;
+        letter-spacing: 3px;
+        margin-top: 5%;
+        /* margin: 1%; */
+        /* text-align: center; */
+        /* transform: translateX(3.5%); */
+        text-transform: uppercase;
+            /* border: solid red 2px; */
+      
+      }
+
+
+.brand {
+    font-size: 13%;
+    /* font-size: 98%; */
+    width: 58%;
+    width: 80%;
+    text-align: justify;
+    letter-spacing: 2.8px;
+    word-spacing: 2.5px;
+    line-height: 20px;
+    color: rgb(43, 39, 40);
+    margin:0%;
+    
+    /* text-transform: uppercase; */
+
+    font-weight: lighter;
+
+}
+
+.skills-sec{
+    display: flex;
+    /* margin: 5%; */
+    /* margin-bottom: 7%; */
+    justify-content: flex-start;
+    align-items: center;
+    /* border: springgreen 2px solid; */
+    width: 100%;
+    transform: translateY(-40%);
+}
+
+skills-title{
+    width: 20%;
+    margin-right: 1%;
+
+}
+
+.skills {
+    font-size: 80%;
+    width: 60%;
+    text-align: justify;
+    letter-spacing: 3px;
+    word-spacing: 2.5px;
+    line-height: 30px;
+    color: rgb(43, 39, 40);
+
+    /* margin:0%; */
+    
+    /* text-transform: uppercase; */
+
+    font-weight: lighter;
+}
+
+
 }

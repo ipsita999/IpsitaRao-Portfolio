@@ -3,11 +3,11 @@ import axios from 'axios';
 import '../styles/Contact.css'
 
 
-const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
+// const encode = (data) => {
+//     return Object.keys(data)
+//         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//         .join("&");
+//   }
   
 class Contact extends React.Component {
     constructor(props) {
@@ -60,30 +60,42 @@ class Contact extends React.Component {
     // }
 
 
-    handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(this.state)
-        fetch('https://ipsita-portfolio.herokuapp.com/', {
-            method: "POST",
-            headers: {"Content-Type" : "application/json"},
-            body: JSON.stringify(this.state),
-            data: this.state
-          }).then(() => alert("Success! Talk soon!"))
-            .catch(error => alert(error));
-    };
+    // handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log(this.state)
+    //     fetch('https://ipsita-portfolio.herokuapp.com/', {
+    //         method: "POST",
+    //         headers: {"Content-Type" : "application/json"},
+    //         body: JSON.stringify(this.state),
+    //         data: this.state
+    //       }).then(() => alert("Success! Talk soon!"))
+    //         .catch(error => alert(error));
+    // };
 
-    resetForm() {
+    // resetForm() {
 
-        this.setState({ name: "", email: "", message: "" })
-    }
+    //     this.setState({ name: "", email: "", message: "" })
+    // }
+
+    // $.ajax({
+    //     url: 'your-heroku.com',
+    //     type: 'POST',
+    //     headers: {'Accept': 'application/json;'},
+    //     data: {
+    //     "subject": "subject",
+    //     "message": "some body text"
+    //     },
+    //     }).done(function (res) {
+    //       console.log(res); // it shows your email sent message.
+    //     });
 
     render() {
         return (
         
             <div className="contact--container" id="contact">
                 <div className = "contacts-title"><div>CONTACT ME</div></div>
-                {/* <p> email: ipsita.rao@gmail.com</p> */}
-                <form id="contact-form" onSubmit={this.handleSubmit}  method="POST">
+                <h3 className="contact-email">Would love to hear from you! find me here: <br></br>ipsita.rao@gmail.com</h3>
+                {/* <form id="contact-form" onSubmit={this.handleSubmit}  method="POST">
                     <div className="form-group">
                         <label htmlFor="name">NAME</label>
                         <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
@@ -97,7 +109,7 @@ class Contact extends React.Component {
                         <textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
-                </form>
+                </form> */}
             </div>
         );
     }
