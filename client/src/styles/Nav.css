@@ -80,6 +80,85 @@ nav {
 
 }
 
+@media(max-width: 500px) {
+
+  nav {
+    height: 100vh;
+    /* height: 100vh; */
+    padding-top: 3%;
+    color: palevioletred;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+    font-family: 'Text Me One', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    z-index: 9;
+    background-color: white;
+    background-color: rgb(251, 250, 248);
+    /* background-color: rgb(48, 1, 23); */
+    /* background-color:rgb(34,19,22); */
+
+    width: 100vw;
+
+
+    letter-spacing: 1px;
+    /* border: 2px solid red; */
+
+  }
+
+  .nav-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    /* border: 2px solid blue; */
+    width: 33%;
+    text-transform: uppercase;
+    font-size: 100%;
+      /* font-weight: bolder; */
+      color: rgb(68, 63, 64);
+  }
+
+  .logo {
+    font-size: 300%;
+    line-height: 30px;
+    margin-top: 5%
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    /* justify-content:space-around ; */
+    text-decoration: none;
+    /* border: 2px solid blue; */
+    width: 33%;
+    text-transform: uppercase;
+    font-size: 100%;
+      /* font-weight: bolder; */
+      color: rgb(68, 63, 64);
+}
+
+.linkedin {
+  width: 20px;
+  /* margin-left: 15%; */
+  transform: translateY(10%);
+
+}
+.git-icon {
+  width: 20px;
+  /* margin-left: 15%; */
+  transform: translateY(15%);
+  
+
+}
+
+
+}
 @media(max-width: 375px) {
 
   nav {

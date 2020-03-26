@@ -78,6 +78,16 @@
 
 }
 
+@media(max-width: 500px){
+
+
+  .nav2 {
+    display: none;
+ 
+
+  }
+  
+}
 @media(max-width: 375px){
 
 
