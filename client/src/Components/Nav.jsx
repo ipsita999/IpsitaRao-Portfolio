@@ -26,6 +26,7 @@ class Nav extends React.Component {
                         > About</Link>
                         <Link
                             activeClass="active"
+                            className= 'work-link'
                             to="works"
                             spy={true}
                             smooth={true}

@@ -173,7 +173,7 @@ label{
         background-attachment: fixed;
         background-size: 800px;
         background-position-y: 10px;
-        background-position-x: 80px;
+        background-position-x: -80px;
         /* justify-content: flex-start; */
         align-items: center;
     }
