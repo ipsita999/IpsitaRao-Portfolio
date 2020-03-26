@@ -49,7 +49,7 @@ class Nav2 extends React.Component {
                             duration={500}
                         > Contact</Link>
                          <a className="resume2"
-                            href="https://drive.google.com/open?id=1HW3SsVuFrO4a_1KpjimHM6NAcBvRkASR"
+                            href="https://drive.google.com/open?id=1T4CnwYKevzQoPJU_asu1wfpOmuYi-VAN"
                         > Resume</a>
                         <a
                             href="https://www.linkedin.com/in/ipsita-rao/"> <img className="linkedin2" src="https://i.ibb.co/ScTk7t5/linkedin.png" />

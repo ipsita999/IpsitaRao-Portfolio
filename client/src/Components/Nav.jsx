@@ -46,7 +46,7 @@ class Nav extends React.Component {
 
                     <div className="nav-right">
                         <a className="resume"
-                            href="https://drive.google.com/open?id=1HW3SsVuFrO4a_1KpjimHM6NAcBvRkASR"
+                            href="https://drive.google.com/open?id=1T4CnwYKevzQoPJU_asu1wfpOmuYi-VAN"
                         > Resume</a>
                         <a
                             href="https://www.linkedin.com/in/ipsita-rao/"> <img  className="linkedin" src="https://i.ibb.co/s1kBC53/linkedin-2.png" /></a>
