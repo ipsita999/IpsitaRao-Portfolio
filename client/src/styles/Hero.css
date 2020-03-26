@@ -93,9 +93,9 @@
         background-image:linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)),  url(https://images.unsplash.com/photo-1507646871303-331b8f659227?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
         background-image:linear-gradient(rgba(46, 19, 29, 0.55),rgba(46, 19, 29, 0.55)),  url(https://images.unsplash.com/photo-1548128341-c9a90eff9495?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
         /* background-image:linear-gradient(rgba(46, 19, 29, 0.342),rgba(46, 19, 29, 0.342)),  url(https://images.unsplash.com/photo-1518621519653-428244942d7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60); */
-        background-size: cover;
+        background-size: 800px;
      
-        background-position-y: -700px;
+        background-position-y: -20%;
     
         font-family: 'Text Me One', sans-serif;
     
