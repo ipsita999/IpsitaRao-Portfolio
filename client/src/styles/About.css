@@ -249,7 +249,10 @@ skills-title{
 
 }
 
-@media (max-width: 375px) {
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
 
     .about--container{
         margin-top: 100vh;
@@ -380,7 +383,8 @@ skills-title{
 @media only screen 
     and (min-device-width : 375px) and (max-device-width : 375px) 
     and (min-device-height : 812px) and (min-device-height : 812px) 
-   and (-webkit-device-pixel-ratio : 3){
+   and (-webkit-device-pixel-ratio : 3)
+   and (orientation : portrait) {
 
     .about--container{
         margin-top: 100vh;
