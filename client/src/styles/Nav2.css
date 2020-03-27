@@ -78,6 +78,16 @@
 
 }
 
+@media(max-width: 980px){
+  .logo2{
+    font-size: 370%;
+  }
+
+  .nav-left2{
+    font-size: 100%;
+  }
+}
+
 @media(max-width: 500px){
 
 
