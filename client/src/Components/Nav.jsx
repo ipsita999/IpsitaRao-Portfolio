@@ -46,12 +46,12 @@ class Nav extends React.Component {
 
                     <div className="nav-right">
                         <a className="resume"
-                            href="https://drive.google.com/open?id=1T4CnwYKevzQoPJU_asu1wfpOmuYi-VAN"
+                            href="https://drive.google.com/open?id=1T4CnwYKevzQoPJU_asu1wfpOmuYi-VAN"  target="_blank"
                         > Resume</a>
                         <a
-                            href="https://www.linkedin.com/in/ipsita-rao/"> <img  className="linkedin" src="https://i.ibb.co/s1kBC53/linkedin-2.png" /></a>
+                            href="https://www.linkedin.com/in/ipsita-rao/" target="_blank"> <img  className="linkedin" src="https://i.ibb.co/s1kBC53/linkedin-2.png" /></a>
                         <a
-                            href="https://github.com/ipsita999"> <img className="git-icon" src="https://i.ibb.co/Pr1Gvyv/github-2.png" />
+                            href="https://github.com/ipsita999" target="_blank"> <img className="git-icon" src="https://i.ibb.co/Pr1Gvyv/github-2.png" />
                         </a>
                     </div>
                 </nav>

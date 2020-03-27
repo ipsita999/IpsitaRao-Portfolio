@@ -15,8 +15,8 @@ const Works = () => {
                     <p className = "title">STITCHED</p>
               <p className = 'info'> A fully responsive design-template for a clothing delivery serivce. Built using pure HTML, CSS and Javascript.</p>
               <div className = "linkss">
-                  <a className="web" href = "https://ipsita999.github.io/Project-1/"> Website</a>
-                  <a className = "git-link" href = "https://github.com/ipsita999/Project-1"> Github</a>
+                  <a className="web" href = "https://ipsita999.github.io/Project-1/" target="_blank"> Website</a>
+                  <a className = "git-link" href = "https://github.com/ipsita999/Project-1" target="_blank"> Github</a>
               </div>
               </div>
             </div>
@@ -26,8 +26,8 @@ const Works = () => {
                     <p className = "title">GOOD COOKING</p>
               <p className = 'info'>  Application where users can create and add recipes to database and search for new recipes. Application created using React, JavaScript, and third-party API.</p>
               <div className = "linkss">
-                  <a className="web" href = "http://good-cooking.surge.sh/"> Website</a>
-                  <a className = "git-link" href = "https://github.com/ipsita999/Recipe-App"> Github</a>
+                  <a className="web" href = "http://good-cooking.surge.sh/" target="_blank"> Website</a>
+                  <a className = "git-link" href = "https://github.com/ipsita999/Recipe-App" target="_blank"> Github</a>
               </div>
               </div>
             </div>
@@ -37,8 +37,8 @@ const Works = () => {
                     <p className = "title">RICHORD</p>
               <p className = 'info'> a React-based web application that allows users to create melodies. Users can login to save, play, and delete original tracks. Express, Postgres, Sequelize, and Node were used to create the database and authenticate the back-end.</p>
               <div className = "linkss">
-                  <a className="web" href = "http://richord.surge.sh/"> Website</a>
-                  <a className = "git-link" href = "https://github.com/ipsita999/RICHORD-APP/tree/ipsita-branch"> Github</a>
+                  <a className="web" href = "http://richord.surge.sh/" target="_blank"> Website</a>
+                  <a className = "git-link" href = "https://github.com/ipsita999/RICHORD-APP/tree/ipsita-branch" target="_blank"> Github</a>
               </div>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Works = () => {
                     <p className = "title"> PLASTIC BAG BAN </p>
               <p className = 'info'> Website serves as a PSA for the plastic bag ban recently implemented in the New York State. Built with CSS/SCSS, HTML, JavaScript, and jQuery.</p>
               <div className = "linkss">
-                  <a className="web" href = "https://schlepyourshitny.com/"> Website</a>
+                  <a className="web" href = "https://schlepyourshitny.com/" target="_blank"> Website</a>
                   <a className = "git-linka" href = "#"> Github</a>
               </div>
               </div>
