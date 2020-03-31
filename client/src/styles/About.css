@@ -212,7 +212,7 @@
         /* margin-left: 8%; */
         background-position-x: 1%;
         background-position-y: -3%;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         /* border: solid red 2px; */
     }
 
@@ -346,7 +346,7 @@ skills-title{
         /* margin-left: 8%; */
         background-position-x: 1%;
         background-position-y: 2%;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         transform: translateX(3.5%);
         /* border: solid red 2px; */
     }
@@ -482,7 +482,7 @@ skills-title{
         /* margin-left: 8%; */
         background-position-x: 0%;
         background-position-y: 1%;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         /* border: solid red 2px; */
     }
 
@@ -615,7 +615,7 @@ skills-title{
         /* margin-left: 8%; */
         background-position-x: 1%;
         background-position-y: -3%;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         /* border: solid red 2px; */
     }
 
