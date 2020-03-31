@@ -1,9 +1,7 @@
 import React from 'react'
 import '../styles/About.css'
 import "../images/skills.png"
-// import Nav2 from './Nav2'
 
-// import { Parallax } from 'react-scroll-parallax';
 
 
 
