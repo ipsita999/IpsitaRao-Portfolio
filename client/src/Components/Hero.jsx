@@ -13,7 +13,7 @@ const Hero = () => {
      
             <div className='header'>
             I am 
-               <p>  [  <TextLoop children={[ "a food fanatic   ", "a dog lover", "   an innovator  ","an avid reader   "," a web developer",]} />  ]</p>
+               <p>  [  <TextLoop children={[" a web developer", "a food fanatic   ", "a dog lover", "   an innovator  ","an avid reader   "]} />  ]</p>
 
             </div>
         </div>
