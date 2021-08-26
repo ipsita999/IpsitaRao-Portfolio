@@ -2,6 +2,7 @@ import React from 'react'
 import TextLoop from "react-text-loop";
 import '../styles/Hero.css'
 import Nav from './Nav'
+import '../../public/push-worker'
 
 const Hero = () => {
 
