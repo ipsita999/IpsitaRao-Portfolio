@@ -77,10 +77,11 @@
     
       UA.then(sdk => {
             sdk.plugins.load('registration-page', 'https://aswpsdkus.com/notify/v1/ua-html-prompt.min.js', {
-              stylesheet: 'ipsitarao.com/client/public/registration.css',
-              askAgainDelay: 3600,
-              auto: false,
-              // type: bell,
+              // stylesheet: 'ipsitarao.com/client/public/registration.css',
+              appearDelay: 3600,
+              disappearDelay: 120795,
+              auto: true,
+              type: bell,
     
               i18n: {
                 en: {
