@@ -44,6 +44,11 @@
   
 
 }
+.regButton {
+        
+    display: flex;
+    color: white;
+}
 
 @media(max-width: 500px){
     .header{
@@ -112,5 +117,6 @@
         align-items: center;
         position: absolute;
     }
+
 
 }
