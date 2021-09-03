@@ -38,7 +38,7 @@ const Hero = () => {
             I am 
                <p>  [  <TextLoop children={[" a web developer", "a food fanatic   ", "a dog lover", "   an innovator  ","an avid reader   "]} />  ]</p>
                {/* <button className='regButton' onClick ={sendNotif} > Subscribe! */}
-                     <div className ='regButton'> <a href="/registration-page.html" className='web'>Subscribe!</a>
+                     {/* <div className ='regButton'> <a href="/registration-page.html" className='web'>Subscribe!</a> */}
                     {/* </button> */}
                     </div>
             </div>
